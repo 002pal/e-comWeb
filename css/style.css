@@ -144,7 +144,7 @@ header nav .navlinksDiv ul li:hover a {
     width: 100%;
     height: 90%;
     border-radius: 20px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .hero_section .card p {
