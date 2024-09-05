@@ -32,7 +32,7 @@
     }
 
     .hero_section .card p{
-        font-size: var(--paragraph-size-small);
+        font-size: var(--link--primary-font);
     }
 
     .hero_section .card img {
