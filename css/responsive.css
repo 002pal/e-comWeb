@@ -44,7 +44,7 @@
 
     /* ====     header   ==== */
     header nav .navbar-brand {
-        font-size: var(--header-font-sm);
+        font-size: var(--sub-heading-mid);
         font-weight: 600;
     }
     
