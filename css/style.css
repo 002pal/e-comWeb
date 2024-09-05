@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: var(--p-color);
+}
+
+/* ====     varibales colors     ==== */
+:root{
+    --background-color: #EAE4DD;
+    --p-color: #3C3D37;
+    --button-border: #697565;
+    --hover: #DCA47C;
+
+    /* ==== varibales font ==== */
+    --header-font: 2em;
+    --header-font-sm: 1.5em;
+    --heading-font: 1.75em;
+    --icon-font: 1.25em;
+    --link-font: 1em;
+    --paragraph-font: 0.8em;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====     header   ==== */
+header nav{
+    background-color: var(--background-color);
+}
+
+header nav .brand{
+    font-size: var(--header-font);
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: var(--button-border);
+    margin: 0;
+}
+
+/* ====     header nav links    ==== */
+header nav .navlinksDiv ul li,
+header nav .iconsDiv ul li{
+    margin: 0.4rem 0.8rem;
+    font-size: var(--link-font);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+header nav .navlinksDiv ul li a.active{
+    font-weight: 800;
+}
+
+/* ====     header icons links   ==== */
+header nav .iconsDiv ul{
+    display: flex;
+    flex-direction: row;
+}
+header nav .iconsDiv ul li{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #EEEDEB;
+    margin: 0.2rem 0.8rem;
+}
+
+header nav .iconsDiv ul li .icon{
+    font-size: var(--icon-font);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav .iconsDiv ul li .icon:hover,
+header nav .navlinksDiv ul li a:hover{
+    color: var(--hover);
+}
