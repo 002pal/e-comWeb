@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+
+    /* ====     header   ==== */
+    header nav .navlinksDiv ul li,
+    header nav .iconsDiv ul li {
+        margin: 0.2rem 0.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 56px;
+    }
+
+    /* ====     header   ==== */
+    /* ====     icons links   ==== */
+    header nav .iconsDiv ul li {
+        margin: 0.4rem;
+    }
+
+    header nav .iconsDiv ul li .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* ====     section    ==== */
+    /* ====     hero section  ==== */
+    .hero_section {
+        height: 100%;
+    }
+
+    .hero_section .card img {
+        height: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* ====     header   ==== */
+    header nav .navbar-brand {
+        font-size: var(--header-font-sm);
+        font-weight: 600;
+    }
+}
