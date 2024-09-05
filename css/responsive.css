@@ -30,10 +30,6 @@
     .hero_section {
         height: 100%;
     }
-    
-    .hero_section .card h5 {
-    font-size: var(--heading-size-large);
-    }
 
     .hero_section .card p{
         font-size: var(--paragraph-size-small);
@@ -50,5 +46,11 @@
     header nav .navbar-brand {
         font-size: var(--header-font-sm);
         font-weight: 600;
+    }
+    
+    /* ====     section    ==== */
+    /* ====     hero section  ==== */
+    .hero_section .card h5 {
+        font-size: var(--heading-size-large);
     }
 }
