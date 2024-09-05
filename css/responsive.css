@@ -31,6 +31,10 @@
         height: 100%;
     }
 
+    .hero_section .card p{
+        font-size: var(--paragraph-size-small);
+    }
+
     .hero_section .card img {
         height: 80%;
     }
