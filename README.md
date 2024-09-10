@@ -5,3 +5,6 @@ Note: this is a running project. we will edit all files (html, css and js). its 
 
 files Updated on 10-Sep-2024
 still we will add a lot of stuff (javaScript are not done. Yet).
+
+!!! you just visit the website by clicking the below link !!!
+https://002pal.github.io/e-comWeb/
