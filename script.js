@@ -9,7 +9,7 @@ userDrop_menu.addEventListener('click', () => {
 //===== first purchase section popup function with delay using jquery =====
 // $(window).on('load', function() {
 //     setTimeout(function() {
-//         $('#popupModal').modal('show');
+         $('#popupModal').modal('show');
 //     }, 2000);
 // });
 
