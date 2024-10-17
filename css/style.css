@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    background-color: white;
+}
+
+main {
+    margin-top: 68.7px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ol{
+    list-style: none;
+}
+
+/* ====    Start side scrollbar    ==== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(129, 129, 129, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--background-fade);
+}
+/* ====    End side scrollbar    ==== */
+
+:root {
+    /* ====     varibales colors     ==== */
+    --primary: #1D7874;
+    --secondary: #F3BD91;
+    --accent: #679289;
+    --hover: #F3686A;
+    --hover-effect: #F7D3B6;
+    --background-fade: #88AAA3;
+    --background-light: #E7EEED;
+    --card-light-bg: #F3F7F6;
+    --text-color: #6c757d;
+    --bold-text: #343a40;
+    --light-text: #adb5bd;
+
+    /* ==== varibales font ==== */
+    --text-size-mega: 2.5em; /* 40px */
+    --text-size-large: 2em; /* 32px */
+    --heading-size-large: 1.75em; /* 28px */
+    --heading-font: 1.5em; /* 24px */
+    --sub-heading-mid: 1.25em; /* 20px */
+    --link-primary-font:  1em; /* 16px */
+    --para-md-size: 0.85;/* 14px */
+    --paragraph-size-small: 0.75em; /* 12px */
+}
+
+/* ==== Start reset bootstrap varibales  ==== */
+.form-control:focus,
+.btn-close:focus,
+.navbar-toggler:focus,
+.form-select:focus{
+    box-shadow: none;
+}
+
+h2 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: var(--text-size-mega);
+    color: var(--text-color);
+}
+
+h5{
+    font-family: "Exo 2", sans-serif;
+    font-size: var(--sub-heading-mid);
+    color: var(--accent);
+}
+
+.dropdown-menu[data-bs-popper]{
+    margin-top: 0.9rem;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: var(--secondary);
+}
+
+header nav .iconsDiv .dropdown-toggle::after { 
+    content: none; 
+} 
+/* ==== End reset bootstrap varibales  ==== */
+
+/* ====    Start header   ==== */
+header nav {
+    background-color: var(--background-fade);
+}
+
+header nav .brand {
+    font-size: var(--text-size-mega);
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin: 0;
+}
+
+header nav .navbar-toggler {
+    border: none;
+}
+
+header nav .navbar-toggler:hover {
+    background-color: var(--primary);
+}
+
+/* ====     header   ==== */
+/* ====     nav links    ==== */
+header nav .navlinksDiv ul li,
+header nav .iconsDiv ul li{
+    margin: 0.4rem 0.8rem;
+    font-size: var(--link-primary-font);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav .iconsDiv ul li .custom-profile-icon li i{
+    color: var(--primary);
+}
+
+header nav .iconsDiv ul li .custom-profile-icon li a:hover{
+    color: var(--primary);
+}
+
+header nav .iconsDiv ul li .custom-profile-icon .dropdown-item:first-child{
+    font-weight: 600;
+    color: var(--hover);
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--secondary);
+}
+
+header nav .navlinksDiv ul li a.active {
+    font-weight: 800;
+}
+
+/* ====     header   ==== */
+/* ====     icons links   ==== */
+/* ====     footer  ==== */
+/* ====     footer top   ==== */
+header nav .iconsDiv .navbar-nav,
+.footer-top .col .flex {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav .iconsDiv .navbar-nav .nav-item,
+.footer-top .col .iconsDiv ul li {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0.2rem 0.8rem;
+    background-color: var(--secondary);
+}
+
+header nav .iconsDiv .navbar-nav .nav-item .icon,
+.footer-top .col .iconsDiv ul li .icon {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav .navlinksDiv ul li a:hover{
+    color: var(--secondary);
+}
+
+header nav .iconsDiv .navbar-nav .nav-item .icon{
+    color: var(--accent);
+}
+
+header nav .iconsDiv .navbar-nav .nav-item .icon:hover{
+    box-shadow: 0 0 20px var(--secondary);
+    border-radius: 50%;
+}
+
+/* ====   dropdown   ==== */
+header nav .iconsDiv .nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+header nav .iconsDiv .custom-profile-icon{
+    flex-direction: row;
+}
+
+header nav .iconsDiv .custom-profile-icon {
+    position: absolute;
+    height: auto;
+    width: 14rem;
+    margin-left: -1rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+header nav .iconsDiv .custom-profile-icon li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0.6rem;
+}
+
+header nav .iconsDiv .custom-profile-icon li i{
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+}
+/* ====    End header   ==== */
+
+/* ====    Start icon cart section  ==== */
+/* ====     cart-modal  ==== */
+.cart-modal .modal-content .modal-header{
+    border-bottom: 1px solid var(--background-fade);
+}
+
+/* ====   product details    ==== */
+.cart-modal .modal-content .product-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cart-modal .modal-content .product-details i{
+    font-size: 48px;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+/* ====   payment details    ==== */
+.cart-modal .modal-content .modal-body .payment-details .card .card-header{
+    font-size: var(--link-primary-font);
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.cart-modal .modal-content .modal-body .payment-details .card .card-header,
+.cart-modal .modal-content .modal-body .payment-details .card .card-footer{
+    background: transparent;
+}
+
+.cart-modal .modal-content .modal-body .payment-details .card .card-footer {
+    font-size: var(--para-md-size);
+    color: #399918;
+    font-weight: 400;
+}
+
+.cart-modal .modal-content .modal-body .payment-details .card .card-body p{
+    font-size: var(--para-md-size);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.cart-modal .modal-content .modal-body .payment-details .card .card-body span{
+    padding-left: 0.2rem;
+}
+
+.cart-modal .modal-content .modal-body .payment-details .card .card-body hr{
+    border: 1px dashed var(--dark-bg-hover);
+}
+
+.cart-modal .modal-content .modal-body .payment-details .payment-info p{
+    font-size: var(--para-md-size);
+
+    font-weight: 300;
+}
+
+.cart-modal .modal-content .modal-body .payment-details .payment-info i{
+    font-size: var(--heading-size-large);
+    color: var(--hover);
+}
+
+/* ====     cart footer section  ==== */
+.cart-modal .modal-content .modal-footer-section .right-col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cart-modal .modal-content .modal-footer-section .left-col{
+    text-align: end;
+}
+/* ====    End icon cart section  ==== */
+
+/* ====    Start login page  ==== */
+.modal .modal-content form input{
+    border: 1px solid var(--background-fade);
+    font-size: var(--paragraph-size-small);
+    line-height: 2rem;
+}
+
+.modal .modal-content form label{
+    color: var(--bold-text);
+}
+
+.modal .modal-content form .form-check input{
+    margin-top: 0.4rem;
+}
+
+.modal .modal-content form .form-check label{
+    font-size: var(--paragraph-size-small);
+    color: var(--light-text);
+}
+
+.modal .modal-content form .d-flex {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal .modal-content form .d-flex a{
+    margin-right: 1rem;
+    color: var(--light-text);
+    font-size: var(--paragraph-size-small);
+}
+
+.modal .modal-content .modal-footer .btn{
+    color: var(--background-light);
+    background-color: var(--primary);
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 1px solid var(--outline);
+}
+
+.modal .modal-content .btn:hover{
+    color: var(--background-light);
+    background-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
+}
+/* ====    End login page  ==== */
+
+/* ====   Start header wishlist  ==== */
+/* ====     login page  ==== */
+.modal .modal-content .modal-header .btn-close:focus,
+.offcanvas .offcanvas-header .btn-close:focus{
+    box-shadow: none;
+}
+
+.modal .modal-content h5,
+.offcanvas .offcanvas-header h5{
+    text-transform: capitalize;
+    font-size: var(--heading-size-large);
+    color: var(--primary);
+    font-weight: 800;
+}
+.offcanvas .offcanvas-body i{
+    font-size: 5rem;
+    color: var(--light-text);
+    padding-bottom: 2rem;
+}
+
+.offcanvas .offcanvas-body a{
+    color: var(--light-text);
+    border-bottom: 1px solid var(--light-text);
+}
+/* ====   End header wishlist  ==== */
+
+/* ====   Start popup purchase  ==== */
+.custom-modal-dialog{
+    margin-left: 1rem;
+    position: fixed;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: 0;
+}
+
+.custom-modal-dialog .modal-body{
+    border-radius: 10px;
+}
+
+.custom-modal-dialog h5{
+    font-weight: 300 !important;
+}
+
+.custom-modal-dialog .modal-body h5 strong{
+    color: var(--secondary);
+}
+
+.custom-modal-dialog .modal-body .btn{
+    background-color: var(--primary);
+    color: var(--background-light);
+}
+/* ====   End popup purchase  ==== */
+
+/* ====  Start hero section  ==== */
+.hero_section {
+    background: linear-gradient(rgba(245, 245, 245, 0.2), rgba(245, 245, 245, 0.8)), url(../images/lauren-mancke-unsplash.jpg);
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero_section .card {
+    border: none;
+    background: none;
+}
+
+.hero_section .card p {
+    font-size: var(--sub-heading-mid);
+    color: var(--hover);
+}
+
+.hero_section .card h2{
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 5.5em;
+    background: linear-gradient(145deg, var(--primary), var(--background-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_section .card .d-flex .form-control {
+    width: 80%;
+    border: 1px solid var(--secondary);
+}
+
+.hero_section .card .d-flex button {
+    border: none;
+    width: 30%;
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+    color: var(--background-light);
+}
+
+.hero_section .card .d-flex button:hover{
+    box-shadow: 1px 1px 40px var(--primary);
+}
+/* ====  End hero section  ==== */
+
+/* ====    Start policy-card-section   ==== */
+.policy-card-section .card{
+    border-radius: 20px;
+    border: none;
+    background-color: var(--card-light-bg);
+}
+
+.policy-card-section .card a i{
+    font-size: 50px;
+    color: var(--secondary);
+}
+
+.policy-card-section .card .card-title,
+.policy-card-section .card .card-text{
+    text-align: center;
+}
+
+.policy-card-section .card .card-text{
+    color: var(--bold-text);
+}
+/* ====    End policy-card-section   ==== */
+
+/* ====   Start product-card-section  ==== */
+.product-card-section hr{
+    color: var(--primary);
+}
+
+.product-card-section .col ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card-section .col ul li{
+    padding: 0 1rem;
+    margin-top: 0.8rem;
+}
+
+.product-card-section .col ul li a{
+    border: none;
+    text-transform: capitalize;
+    color: var(--bold-text);
+}
+
+/* cards area */
+.product-card-section .card-container .card-div .card {
+    border-radius: 20px;
+}
+
+.product-card-section .card img{
+    height: 180px;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.product-card-section .card .card-body{
+    cursor: pointer;
+}
+
+.product-card-section .card .card-body .card-text i{
+    color: var(--hover);
+    font-size: var(--link-primary-font);
+} 
+
+.product-card-section .card .card-body a{
+    border: 1px solid var(--hover-effect);
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.product-card-section .card .card-body .addCart i {
+    margin-right: 20px;
+}
+/* ====   End product-card-section  ==== */
+
+/* ====   Start best-seller-section  ==== */
+/* ====   product-card-section  ==== */
+.best-seller-section .card-area .col .card{
+    border: none;
+    border-radius: 20px;
+    background-color: var(--card-light-bg);
+}
+
+.best-seller-section .card-area .col .card img{
+    height: 190px;
+    width: 100vw;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-radius: 20px;
+}
+
+.best-seller-section .card-area .card-body h5,
+.product-card-section .card .card-body h5{
+    font-size: var(--sub-heading-mid);
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: capitalize;
+}
+
+.best-seller-section .card-area .card-body .rating,
+.product-card-section .card .card-body .rating{
+    color: var(--secondary);
+}
+
+.best-seller-section .card-area .card-body a{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid var(--hover-effect);
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.best-seller-section .card-area .card-body a:hover,
+.product-card-section .card .card-body a:hover{
+    color: var(--background-light);
+    background-color: var(--secondary);
+    box-shadow: 0 0 20px var(--secondary);
+}
+/* ====   End best-seller-section  ==== */
+
+/* ====   Start offer-section  ==== */
+.offer-section {
+    background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0.6)), url(../images/basket-fruits-background.jpg);
+    height: 80vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.offer-section .offer-section-div{
+    height: 80vh;
+}
+
+.offer-section .offer-section-div .card{
+    background: transparent;
+    border: none;
+}
+
+.offer-section .offer-section-div .card p{
+    color: var(--hover);
+}
+
+.offer-section .offer-section-div .card .btn{
+    background-color: var(--primary);
+    color: var(--card-light-bg);
+    text-transform: capitalize;
+}
+
+.offer-section .offer-section-div .card .btn:hover{
+    box-shadow: 0 0 50px var(--primary);
+}
+/* ====   End offer-section  ==== */
+
+/* ====    Start footer  ==== */
+/* ====    Start footer top   ==== */
+.footer-top .col {
+    margin: 1rem 0;
+}
+
+.footer-top .col h2{
+    color: var(--primary);
+}
+
+.footer-top .col .navlinksDiv ul li a:hover{
+    color: var(--hover);
+}
+
+.footer-top .col .iconsDiv ul li .icon:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--secondary);
+}
+
+.footer-top .col .iconsDiv ul li .icon{
+    color: white;
+}
+
+.footer-top .col .navlinksDiv ul li a {
+    text-transform: uppercase;
+}
+
+.footer-top .col .card-text {
+    padding: 0.6rem 0;
+    font-size: var(--para-md-size);
+    color: var(--bold-text);
+}
+
+.footer-top .col .form-control,
+.footer-top .col .btn {
+    border: 1px solid var(--secondary);
+    border-radius: 50px;
+}
+
+.footer-top .col .btn:hover{
+    color: var(--hover);
+}
+/* ====    End footer top   ==== */
+
+/* ====    Start footer bottom   ==== */
+/* ====     icon cart section  ==== */
+/* ====     cart footer section  ==== */
+.footer-bottom hr{
+    color: var(--hover);
+}
+
+.cart-modal .modal-content .modal-footer-section p,
+.footer-bottom p{
+    color: var(--text-color);
+    font-size: var(--para-md-size);
+}
+
+.cart-modal .modal-content .modal-footer-section p a,
+.footer-bottom p a{
+    color: var(--light-text);
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--light-text);
+}
+/* ====    End footer bottom   ==== */
+/* ====    End footer   ==== */

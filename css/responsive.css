@@ -1,0 +1,130 @@
+@media (min-width: 1200px) {
+
+    /* ====  Start hero section  ==== */
+    .hero_section {
+        height: 80vh;
+    }
+
+    .hero_section .container {
+        margin: 6rem 0;
+    }
+
+    /* ====  End hero section  ==== */
+}
+
+@media (max-width: 992px) {
+    main {
+        margin-top: 54px;
+    }
+
+    /* ====    Start header   ==== */
+    header nav .brand {
+        font-size: var(--text-size-large);
+    }
+
+    header nav .navlinksDiv ul li,
+    header nav .iconsDiv ul li {
+        margin: 0.2rem 0.2rem;
+        font-size: var(--para-md-size);
+    }
+
+    /* ====   offer-section  ==== */
+    .offer-section {
+        height: 60vh;
+    }
+
+    .offer-section .offer-section-div {
+        height: 60vh;
+    }
+    /* ====    End header   ==== */
+}
+
+@media (min-width: 768px) {
+
+    /* ====   Start product-card-section  ==== */
+    .product-card-section .card .card-body .addCart i {
+        margin-right: 10px;
+    }
+    /* ====   End product-card-section  ==== */
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: var(--text-size-large);
+    }
+    /* ====    start header   ==== */
+    
+    /* ====     icons links   ==== */
+    header nav .iconsDiv ul li {
+        margin: 0.4rem;
+    }
+
+    header nav .iconsDiv ul li .icon {
+        width: 40px;
+        height: 40px;
+    }
+    /* ====    End header   ==== */
+
+    /* ====    Start hero section  ==== */
+    .hero_section .card h2 {
+        font-size: 3.5em;
+    }
+
+    .hero_section {
+        height: 100%;
+    }
+
+    .hero_section .card p {
+        font-size: var(--link-primary-font);
+    }
+    /* ====    End hero section  ==== */
+
+}
+
+@media (max-width: 576px) {
+
+    /* ====    Start header   ==== */
+    header nav .navbar-brand {
+        font-size: var(--sub-heading-mid);
+        font-weight: 600;
+    }
+    /* ====    End header   ==== */
+
+    /* ====    Start hero section  ==== */
+    .hero_section .card h5 {
+        font-size: var(--heading-size-large);
+    }
+    /* ====    End hero section  ==== */
+
+    /* ====   Start product-card-section  ==== */
+    .product-card-section .col {
+        padding: 0;
+    }
+    /* ====   end product-card-section  ==== */
+
+    /* ====   Start offer-section  ==== */
+    .offer-section .offer-section-div .card {
+        text-align: end;
+    }
+
+    .offer-section .offer-section-div .card p {
+        font-size: var(--link-primary-font);
+    }
+
+    .offer-section .offer-section-div .card h2 {
+        font-size: var(--heading-font);
+    }
+    /* ====   End offer-section  ==== */
+
+    /* ====   Start best-seller-section  ==== */
+    .best-seller-section .card-area .card-body a {
+        font-size: var(--paragraph-size-small);
+    }
+    /* ====   End best-seller-section  ==== */
+
+    /* ====    Start footer bottom   ==== */
+    .footer-bottom p {
+        font-size: var(--paragraph-size-small);
+    }
+    /* ====   End footer bottom  ==== */
+}
