@@ -98,8 +98,14 @@
 
     /* ====   Start product-card-section  ==== */
     .product-card-section .col {
-        padding: 0;
+        padding: 0 2rem;
     }
+    
+     /* ====   Start shoppage style  ==== */
+    .left-col .product-card-section .col {
+        padding: 0 2rem;
+    }
+    /* ====   End shoppage style  ==== */
     /* ====   end product-card-section  ==== */
 
     /* ====   Start offer-section  ==== */
